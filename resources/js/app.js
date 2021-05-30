@@ -6,7 +6,7 @@ import store from "../store/"
 import router from "../router/"
 import axios from 'axios';
 
-axios.defaults.baseURL="http://ejemplo.test/api"
+axios.defaults.baseURL="http://localhost/Ing-Soft-1/public/api"
 
 Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 Vue.component('home-component', require('./components/HomeComponent.vue').default);

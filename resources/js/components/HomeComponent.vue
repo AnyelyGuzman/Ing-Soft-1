@@ -10,6 +10,28 @@
                     <v-list-item-title>Dashboard</v-list-item-title>
                 </v-list-item-content>
             </v-list-item>
+
+            <v-list-group :prepend-icon="model ? 'mdi-chevron-up' : 'mdi-chevron-down'" append-icon="" color="#15638A">
+                <template v-slot:activator>
+                    <v-list-item-content>
+                        <v-list-item-title>
+                            Inventario
+                        </v-list-item-title>
+                    </v-list-item-content>
+                </template>
+
+                <v-list-item to="/productos" link color="#15638A">
+                    <v-list-item-action>
+                        <v-icon>mdi-treasure-chest</v-icon>
+                    </v-list-item-action>
+                    <v-list-item-content>
+                        <v-list-item-title>
+                            Productos
+                        </v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
+            </v-list-group>
+
             <v-list-group :prepend-icon="model ? 'mdi-chevron-up' : 'mdi-chevron-down'" append-icon="" color="#15638A">
                 <template v-slot:activator>
                     <v-list-item-content>
@@ -39,6 +61,7 @@
                     </v-list-item-content>
                 </v-list-item>
             </v-list-group>
+            
             <v-list-item link>
                 <v-list-item-action>
                     <v-icon>mdi-power</v-icon>
